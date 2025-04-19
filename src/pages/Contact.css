@@ -1,0 +1,110 @@
+/* General Styling for Contact Page */
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.contact-left, .contact-right {
+  width: 48%; /* Split the space into two halves */
+  padding: 20px;
+}
+
+.contact-left {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-left h2 {
+  font-size: 24px;
+  color: #0e535a;
+}
+
+.contact-left p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contact-left .about-us-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-left .about-us-image img {
+  width: 100%;
+  max-width: 450px; /* Adjust based on your design */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-right {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-right h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-right .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-right .form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-right .form-group input,
+.contact-right .form-group textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-right .submit-btn {
+  padding: 10px 20px;
+  background-color: #0e535a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-right .contact-info p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.contact-right .contact-info svg {
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-left, .contact-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

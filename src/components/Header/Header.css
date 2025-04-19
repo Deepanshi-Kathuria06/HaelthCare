@@ -1,0 +1,124 @@
+/* General styles */
+:root {
+  --primary-teal: #008080;
+  --light-teal: #e0f7f7;
+  --text-dark: #023535;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 0 0 20px 20px;
+  max-width: 90%;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Container flex */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--primary-teal);
+}
+
+.logo-icon {
+  font-size: 1.8rem;
+}
+
+/* Desktop links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+  color: var(--primary-teal);
+}
+
+.navbar-cta {
+  background-color: var(--primary-teal);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.navbar-cta:hover {
+  background-color: #006666;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--primary-teal);
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 15px;
+  margin: 0.5rem;
+}
+
+.mobile-menu a,
+.mobile-cta {
+  padding: 0.6rem 0;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.mobile-cta {
+  background-color: var(--primary-teal);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Show mobile menu */
+.mobile-menu.active {
+  display: flex;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+}
